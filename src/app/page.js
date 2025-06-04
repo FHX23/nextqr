@@ -20,7 +20,7 @@ export default function Home() {
           qrScanner.stop();
           setScanning(false);
           // Enviar resultado a API
-          fetch("/api/registro", {
+          fetch("/appi/registro", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ qr: decodedText }),
